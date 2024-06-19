@@ -1,0 +1,221 @@
+<html>
+    <head><title>Formularios</title></head>
+    <meta http-equiv="Content-type" content="text/html; charset0utf8"/>
+    <body>
+        <body background="imagenes/programacion3.png">
+           <!-- <body bgcolor="silver">-->
+
+    <ul id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="EJERCICIO1.HTML">Taller</a></li>
+    </ul>
+
+    <center>
+        <font size="6" color="red" face="comic sans ms">Formularios en html</font>
+    </center><p>
+
+    <font size="6" color="brown" face="arial black">Campos principales para formularios</font>
+    <pre>
+        <input type="radio" name="estado_civil" value="soltero">Solter@</input>
+        <input type="radio" name="estado_civil" value="casado">Casad@</input>
+        <input type="radio" name="estado_civil" value="union">Union libre</input>
+        <input type="radio" name="estado_civil" value="viudo">viud@</input>
+        <input type="radio" name="estado_civil" value="divor">divorciad@</input>
+    </pre>
+    <p>
+    Seleccion desplegable
+    <p>
+
+        <select name="estado_civil" id="estado">
+            <option>Soltero</option>
+            <option>Casado</option>
+            <option>Union Libre</option>
+            <option>Viudo</option>
+            <option>Divorciado</option>
+        </select><p>
+    Campos de texto <p>
+
+    Nombre <input type="text" name="nombre"><br><br>
+    Apellido<input type="text" name="apellido"><p>
+    Contraseña<input type="password" name="contra"><p>
+    Casilla de verificacion<input type="checkbox" name="casilla"><br><br>
+    Casilla de seleccion <input type="radio" name="radio"><p>
+    Seleccion de archivo<input type="file" name="archivo"><p>
+    Facha<input type="date" name="fecha"><br><br>
+    Numeros<input type="number" name="numero"><br><br>
+    Correo<input type="email" value="@"><br><br>
+    Campo mensaje <textarea name="mensaje"></textarea><br><br>
+    Boton envio<input type="submit" value="Enviar"><br><br>
+    Boton Borrar<input type="reset" value="Borrar"><br><br>
+
+<!--Ejercicio En la parte de abajo del ejercicio anterior cree:
+un horario de clase con las siguientes caracteristicas:
+1 6 horas de clase por dia mas descanso, el descanso debe ser una fila
+completa unida el mitad del horario
+2 cada materia de un color de letra y color de fondo, las materias que se
+repiten deben estar del mismo color
+3 los titulos deben estar centrados y en negrita
+4 la tabla debe tener borde de color
+5 la tabla de tener espacios personalizados entre los bordes de tabla y
+los bordes y el contenido de la celda
+
+
+-->
+
+<center>
+    <font size="6" color="blue" face="arial">Aplicando lo aprendido </font>
+</center>
+
+<form action="https://www.google.com/" method="post" enctype="text/plain">
+<table border="2" bordercolor="red" width="100%" cellspacing="10" cellpadding="10">
+    <tr><td>
+        Nombre <input type="text" name="nombre" size="25" maxlength="50">
+        Apellido <input type="text" name="apellido" size="35" maxlength="100">
+        Correo Electronico <input type="email" value="@" name="correo" size="40" maxlength="100">
+        Pais <input type="text" name="pais" size="15" maxlength="50">
+        Ciudad <input type="text" name="ciudad" size="15" maxlength="50">
+    </td>
+    </tr>
+</table>
+    <table border="2" bordercolor="red" width="100%" cellspacing="10" cellpadding="10">
+        <tr>
+            <td>Edad<br>
+            <input type="radio" name="edad" value="020">0 -20 años<br>
+            <input type="radio" name="edad" value="2040">21 - 40 años <br>
+            <input type="radio" name="edad" value="4060">41 60 años <br>
+            <input type="radio" name="edad" value="60100">61 o mas años<br>
+            </td>
+            <td>
+                Como nos conociste<br>
+                <input type="checkbox" name="conocer">
+                Atravez de un buscador web<br>
+                <input type="checkbox" name="conocer">
+                Atravez de un amigo<br>
+                <input type="checkbox" name="conocer">
+                Navegabdo por la red<br>
+                <input type="checkbox" name="conocer">
+                Otros medios<br>
+            </td>
+        </tr>
+    </table>
+    <table border="2" bordercolor="red" width="100%" cellspacing="10" cellpadding="10">
+        <tr>
+            <td>
+                Opinion sobre nuestra pagina<p>
+                    <textarea cols="40" rows="5" name="opinion">Escriba aqui su opinion.....</textarea>
+            </td>
+            <td>
+                Tiene alguna sugerencia<p>
+                    <textarea cols="40" rows="5" name="opinion">Escriba aca su sugerencia....</textarea>
+            </td>
+            <td>
+                Cuanto navega por internet (Seleccione la que mas se acerque)<p>
+                <select name="frecuencia" size="2">
+                    <option value="1">2 horas al dia</option>
+                    <option value="2">2 a 4 horas al dia</option>
+                    <option value="3">$ a 8 horas al dia</option>
+                    <option value="4">8 a 12 horas la dia</option>
+                    <option value="5">No puedo vivir sin internet</option>
+                </select><p>
+            </td>
+        </tr>
+    </table>
+    <table border="2" bordercolor="red" width="50%" align="center" cellspacing="10" cellspadding="10">
+        <tr>
+            <td>
+                <div align="center">
+                    <input type="submit" value="Enviar">
+                </div>
+            </td>
+            <td>
+                <div align="center" >
+                <input type="reset" value="Borrar"></div>
+            </td>
+        </tr>
+    </table></form>
+
+    <form action="recibir.html" method="POST">
+        <center>
+            <table border="2" bordercolor="blue" width="70%" cellspacing="10" cellspadding="0">
+                <tr>
+                    <th bgcolor="pink"><font size="1" color="red" face="arial black">Nombre</font>
+                    <td bgcolor="pink"><font size="1" color="red" face="arial black">
+                        <input type="text" name="nombre" size="18" maxlength="18">
+                        Fecha de nacimiento
+                        <input type="date" name="nacimiento" size="8" maxlength="8">
+                        Numero de documento
+                        <input type="number" name="documento" size="8" maxlength="20"
+                    </font></td></th>
+                </tr>
+                <tr>
+                    <th bgcolor="pink"><font size="1" color="red" face="arial black">Apellidos</font></th>
+                    <td bgcolor="pink"><font size="1" color="red" face="arial black">
+                        <input type="text" name="apellidos" size="48" maxlength="48">
+                        Tipo de documento
+                        <select name="tipo_doc">
+                            <option>Cedula</option>
+                            <option>tarjeta de Identidad</option>
+                            <option>Registro civil</option>
+                            <option>Pasaporte</option>
+                            <option>Cedula de extrangeria</option>
+                        </select>
+                    </font></td>
+                </tr>
+                <tr>
+                    <th bgcolor="pink"><font size="1" color="red" face="arial black">Pais</font></th>
+                    <td bgcolor="pink"><font size="1" color="red" face="arial blac">
+                        <input type="text" name="pais" size="30" maxlength="100">
+                        Ciudad <input type="text" name="ciudad" size="30" maxlength="100">
+                        Rh <select name="rh">
+                            <option>O+</option>
+                            <option>O-</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                        </select>
+                    </font></td>
+                </tr>
+                <tr>
+                    <th bgcolor="pink"><font size="1" color="red" face="arial black">Hijos</font></th>
+                    <td bgcolor="pink"><font size="1" color="red" face="arial black">
+                        <select name="hijos">
+                            <option>Si</option>
+                            <option>No</option>
+                        </select>
+                        Numero de hijos<input type="number" name="hijos" size="30" maxlength="2">
+                        Correo Electronico<input type="email" name="correo" value="@" size="30" maxlength="100">
+                    </font></td>
+                </tr>
+            </table>
+            <table border="2" bordercolor="red" width="70%" cellspacing="10" cellpadding="0">
+                <tr>
+                    <td bgcolor="yellow"><font size="1" color="red" face="arial black">
+                        Enfermedades que padece
+                        <textarea name="enfer" cols="40" rows="5"></textarea>
+                    </font></td>
+                    <td bgcolor="yellow"><font size="1" color="red" face="arial black">
+                        Toma algun medicamento
+                        <select name="medica"><option>Si</option><option>No</option></select></font></td>
+                        <td bgcolor="yellow"><font size="1" color="red" face="arial black">
+                            Si su respuesta es si diga cuales
+                            <textarea name="medicame" cols="40" rows="5"></textarea>
+                    </font></td>
+                </tr>
+                <tr>
+                    <th bgcolor="purple"><font size="1" color="red" face="arial black">
+                        <input type="submit" value="Enviar">
+                    </font></th>
+                    <th bgcolor="purple"><font size="1" color="red" face="arial black">
+                        <input type="reset" value="Borrar">
+                    </font></th>
+                </tr>
+            </table>
+        </center>
+    </form>
+
+
+    </body>
+    </html>
